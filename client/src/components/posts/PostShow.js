@@ -1,8 +1,10 @@
 import React from 'react';
-const PostShow = ({ id, title, body }) => (
+
+const PostShow = (props) => (
   <>
-    <h1>{title}</h1>
-    <p>{body}</p>
+    <h1>{props.location.state.title}</h1>
+    <p>{props.location.state.body}</p>
   </>
 )
+
 export default PostShow;
