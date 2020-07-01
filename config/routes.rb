@@ -4,4 +4,7 @@ Rails.application.routes.draw do
     resources :posts
   end
   
+  # last route
+  get '*other', to: 'static#index'
+  
 end
